@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olá, mundo!</title>
+</head>
+<body>
+    <h1>Meu primeiro programa JS</h1>
+    <h2>Ola, mundo. :3</h2>
+    <script>
+    window.alert('O que vc ta fazenu aqui') // so merda ignora
+    window.prompt('Me diga seu nome meliante')
+    window.confirm('So pra confirmar <!--Piada bosta>')
+    var numero_1 = window.prompt('Digite um número') //pergunta numeros
+    var numero_2 = window.prompt('Digite outro número')
+    var soma = numero_1 + numero_2
+    window.alert('a soma dos números é ' + soma) //mostra soma
+    var nome_pessoa = window.prompt('Qual é seu nome: ') //pergunta nome
+    window.alert('Seu nome é ' + nome_pessoa) //mostra nome
+    </script>
+</body>
+</html>

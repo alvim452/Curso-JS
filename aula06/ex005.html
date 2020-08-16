@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        Body{
+            background:rgb(68, 125,199) ;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+window.document.write("Olá, Mundo!")
+window.document.write(window.document.charset)
+window.document.write( window.navigator.appName)
+window.document.write(window.document.URL)
+var p1= window.document.getElementsByTagName(`p`)[0]
+window.document.write(p1.innerText)
+// OU
+window.document.write(`Está escrito assim: `+p1.innerText)
+p1.style.color=`blue`
+var corpo=window.document.body
+corpo.style.background=`black`
+/*
+var d =window.document.getElementById("msg").innerText="Olá!"
+d.style.background=`green`
+d.innerText="Estou aguardando..."
+*/
+var d = window.document.querySelector(`div#msg`)
+d.style.color=`blue`
+/* UTILIZANDO POR CLASSE
+<div class=`msg`> </div>
+var d = window.document.querySelector(`div.msg`)
+d.style.color=`blue`
+*/
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+background: rgb(70, 142, 236);
+font:normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section {
+    background: white;
+    border-radius: 10px;   /* Cantos arredondados na section*/
+    padding: 15px; /*espaço no interior da caixa*/
+    width: 500px;/*Comprimento da section*/
+    margin:auto;/* margens exteriores da section*/
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.363) ;/* sombra nas bordas*/
+}
+div{
+    text-align: center; /* centralizar o texto nas duas div´s.*/
+    padding: 8px;/* espaçamento interior do texto na div. */
+}
+footer{
+    color: white;
+    text-align:center;/* alinhamento do texto dentro do footer*/
+    font-style: italic;/* letra em italico*/
+}

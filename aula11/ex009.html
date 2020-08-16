@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1> Nacional ou Estrangeiro</h1>
+    Introduza o seu País de origem: <input type="text" name="txtp" id="txtp" value=""> Primeira letra em Maiúsculas.
+    <p><input type="button" value="Verificar" onclick="clicar()"></p>
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var txp=window.document.querySelector(`input#txtp`) 
+            var res=window.document.querySelector(`div#res`)
+            res.innerHTML=`Verificando os seus dados....`
+            if(txp=="Portugal"){
+                res.innerHTML +=`<p> Voçê é um cidadão Nacional de Portugal</p>`
+            }else{
+                res.innerHTML +=`<p>O seu paìs de origem è ${txp}, voçê è um cidadão <strong>Estrangeiro</strong>.</p>`
+            }
+        }
+        
+
+    </script>
+    
+</body>
+</html>
